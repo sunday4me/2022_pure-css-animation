@@ -46,7 +46,7 @@ span{
     left: 50%;
     width: 50%;
     height: 4px;
-    background: #fff000;
+    background: transparent;
     transform-origin:left;
     animation: animate 2s linear infinite;
 }
@@ -71,5 +71,15 @@ span:before{
     
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes animateCircle{
+    0%{
+        transform: rotate(45deg);
+    }    
+    
+    100%{
+        transform: rotate(405deg);
     }
 }
